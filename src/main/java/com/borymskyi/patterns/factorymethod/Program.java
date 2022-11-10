@@ -1,9 +1,10 @@
-package com.borymskyi.patterns.factory;
+package com.borymskyi.patterns.factorymethod;
 
 public class Program {
     public static void main(String[] args) {
-        DeveloperFactory javaFactory = createDeveloperBySpecialty("c++");
-        Developer javaDeveloper = javaFactory.huntNewDeveloper();
+        DeveloperFactory factory = createDeveloperBySpecialty("java");
+        Developer developer = factory.createDeveloper();
+        developer.writeSomeCode();
     }
 
     public static DeveloperFactory createDeveloperBySpecialty(String specialty) {

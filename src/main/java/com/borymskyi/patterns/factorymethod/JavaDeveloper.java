@@ -1,4 +1,4 @@
-package com.borymskyi.patterns.factory;
+package com.borymskyi.patterns.factorymethod;
 
 /**
  * @author Dmitrii Borymskyi

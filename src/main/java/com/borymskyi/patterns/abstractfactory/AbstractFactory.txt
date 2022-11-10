@@ -1,0 +1,4 @@
+This is an implementation Creational pattern "Abstract Factory".
+
+Abstract Factory - это создание семейств связанных или зависимых продуктов.
+Фабричный метод используется для создания только одного продукта

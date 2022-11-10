@@ -1,4 +1,4 @@
-package com.borymskyi.patterns.factory;
+package com.borymskyi.patterns.factorymethod;
 
 public interface Developer {
     void writeSomeCode();
