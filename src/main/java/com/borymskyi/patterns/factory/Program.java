@@ -2,10 +2,8 @@ package com.borymskyi.patterns.factory;
 
 public class Program {
     public static void main(String[] args) {
-         DeveloperFactory developerFactory = createDeveloperBySpecialty("c++");
-         Developer developer = developerFactory.createDeveloper();
-
-         developer.writeSomeCode();
+        DeveloperFactory javaFactory = createDeveloperBySpecialty("c++");
+        Developer javaDeveloper = javaFactory.huntNewDeveloper();
     }
 
     public static DeveloperFactory createDeveloperBySpecialty(String specialty) {
