@@ -1,4 +1,4 @@
-package com.borymskyi.patterns.creational.builder2;
+package com.borymskyi.patterns.creational.builder2.components;
 
 /**
  * @author Dmitrii Borymskyi
