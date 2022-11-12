@@ -1,6 +1,8 @@
 package com.borymskyi.patterns.creational.builder2.directors;
 
 import com.borymskyi.patterns.creational.builder2.builders.BuildingBuilder;
+import com.borymskyi.patterns.creational.builder2.builders.CastleBuilder;
+import com.borymskyi.patterns.creational.builder2.building.Castle;
 import com.borymskyi.patterns.creational.builder2.components.*;
 
 /**
@@ -8,20 +10,24 @@ import com.borymskyi.patterns.creational.builder2.components.*;
  * @version 1.0
  */
 public class Director {
-    public void buildCastle(BuildingBuilder buildingBuilder) {
-        buildingBuilder.buildType(Type.CASTLE);
-        buildingBuilder.buildSquare(25000);
-        buildingBuilder.buildWall(Wall.CASTLE_WALL);
-        buildingBuilder.buildFloor(Floor.MARBLE_FLOOR);
-        buildingBuilder.buildRoof(Roof.STONE);
-        buildingBuilder.buildEntrance(Entrance.CASTLE_ENTRANCE);
-        buildingBuilder.buildWindow(60);
-        buildingBuilder.buildMoat(true);
-        buildingBuilder.buildBattleTowers(true);
-        buildingBuilder.buildWell(true);
-        buildingBuilder.buildInnerCourt(true);
-        buildingBuilder.buildOutBuildings(true);
-        buildingBuilder.buildNumberOfGuards(45);
+    public Castle buildCastle(CastleBuilder castleBuilder) {
+//        buildingBuilder.buildType(Type.CASTLE).buildSquare(25000).buildWall(Wall.CASTLE_WALL);
+
+        castleBuilder.buildType(Type.CASTLE);
+        castleBuilder.buildSquare(25000);
+        castleBuilder.buildWall(Wall.CASTLE_WALL);
+        castleBuilder.buildFloor(Floor.MARBLE_FLOOR);
+        castleBuilder.buildRoof(Roof.STONE);
+        castleBuilder.buildEntrance(Entrance.CASTLE_ENTRANCE);
+        castleBuilder.buildWindow(60);
+        castleBuilder.buildMoat(true);
+        castleBuilder.buildBattleTowers(true);
+        castleBuilder.buildWell(true);
+        castleBuilder.buildInnerCourt(true);
+        castleBuilder.buildOutBuildings(true);
+        castleBuilder.buildNumberOfGuards(45);
+
+        return castleBuilder.getResult();
     }
 
     public void buildPlanCityHouse(BuildingBuilder buildingBuilder) {

@@ -4,6 +4,7 @@ import com.borymskyi.patterns.creational.builder2.builders.CastleBuilder;
 import com.borymskyi.patterns.creational.builder2.builders.CityHousePlanBuilder;
 import com.borymskyi.patterns.creational.builder2.building.Castle;
 import com.borymskyi.patterns.creational.builder2.building.CityHousePlan;
+import com.borymskyi.patterns.creational.builder2.components.Type;
 import com.borymskyi.patterns.creational.builder2.directors.Director;
 
 /**
@@ -12,18 +13,24 @@ import com.borymskyi.patterns.creational.builder2.directors.Director;
  */
 public class Runner {
     public static void main(String[] args) {
-        Director director = new Director();
-        CastleBuilder castleBuilder = new CastleBuilder();
-        director.buildCastle(castleBuilder);
+//        Director director = new Director();
 
-        Castle castle = castleBuilder.getResult();
-        System.out.println(castle.openTheGate());
-        System.out.println(castle.putDefendersInPosition());
 
-        CityHousePlanBuilder cityHousePlanBuilder = new CityHousePlanBuilder();
-        director.buildPlanCityHouse(cityHousePlanBuilder);
+//        CastleBuilder castleBuilder = new CastleBuilder();
+//        director.buildCastle(castleBuilder);
+//        Castle castle = castleBuilder.getResult();
 
-        CityHousePlan cityHousePlan = cityHousePlanBuilder.getResult();
-        System.out.println(cityHousePlan.showPlan());
+//        System.out.println(castle.openTheGate());
+//        System.out.println(castle.putDefendersInPosition());
+
+
+//        CityHousePlanBuilder cityHousePlanBuilder = new CityHousePlanBuilder();
+//        director.buildPlanCityHouse(cityHousePlanBuilder);
+//
+//        CityHousePlan cityHousePlan = cityHousePlanBuilder.getResult();
+//        System.out.println(cityHousePlan.showPlan());
+
+        Castle castle1 = new Director().buildCastle(new CastleBuilder());
+        System.out.println(castle1.putDefendersInPosition());
     }
 }

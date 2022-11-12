@@ -1,4 +1,4 @@
-package com.borymskyi.patterns.creational.adapter;
+package com.borymskyi.patterns.structural.adapter;
 
 /**
  * @author Dmitrii Borymskyi

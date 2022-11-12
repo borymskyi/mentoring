@@ -31,13 +31,15 @@ public class CityHousePlanBuilder implements BuildingBuilder {
     }
 
     @Override
-    public void buildType(Type type) {
+    public BuildingBuilder buildType(Type type) {
         this.typeBuilding = type;
+        return this;
     }
 
     @Override
-    public void buildSquare(int square) {
+    public BuildingBuilder buildSquare(int square) {
         this.square = square;
+        return this;
     }
 
     @Override

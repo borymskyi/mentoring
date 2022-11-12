@@ -8,9 +8,9 @@ import com.borymskyi.patterns.creational.builder2.components.*;
  */
 public interface BuildingBuilder {
 
-    void buildType(Type type);
+    BuildingBuilder buildType(Type type);
 
-    void buildSquare(int square);
+    BuildingBuilder buildSquare(int square);
 
     void buildWall(Wall wall);
 

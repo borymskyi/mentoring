@@ -1,4 +1,4 @@
-package com.borymskyi.patterns.creational.adapter2;
+package com.borymskyi.patterns.structural.adapter2;
 
 public class AmericanSockerImpl implements AmericanSocket {
     @Override
