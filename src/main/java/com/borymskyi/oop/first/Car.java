@@ -22,6 +22,9 @@ public class Car {
         this.engine = engine;
     }
 
+    public Car() {
+    }
+
     public void start() {
         System.out.println("Поехали");
     }
